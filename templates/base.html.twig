@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    <ul>
+        <li><a href="{{ path('contact_home') }}">Home</a></li>
+        <li><a href="{{ path('contact_create') }}">Nouveau contact</a></li>
+
+    </ul>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
